@@ -1,0 +1,106 @@
+pt:
+  flash:
+    chamado_categorias:
+      create:
+        notice: "Categoria de chamado criada com sucesso!"
+      update:
+        notice: "Categoria de chamado atualizada com sucesso!"
+      destroy:
+        notice: "Categoria de chamado excluída com sucesso!"
+    chamado_updates:
+      create:
+        notice: "Mensagem enviada com sucesso!"
+      update:
+        notice: "Mensagem atualizada com sucesso!"
+      destroy:
+        notice: "Mensagem excluída com sucesso!"
+    esp_midias:
+      create:
+        notice: "Espaço de mídia criado com sucesso!"
+      update:
+        notice: "Espaço de mídia atualizado com sucesso!"
+      destroy:
+        notice: "Espaço de mídia excluído com sucesso!"
+    estaticas:
+      create:
+        notice: "Página estática criada com sucesso!"
+      update:
+        notice: "Página estática atualizada com sucesso!"
+    midias:
+      create:
+        notice: "Mídia criada com sucesso!"
+      update:
+        notice: "Mídia atualizada com sucesso!"
+      destroy:
+        notice: "Mídia excluída com sucesso!"
+    noticias:
+      create:
+        notice: "Notícia criada com sucesso!"
+      update:
+        notice: "Notícia atualizada com sucesso!"
+      destroy:
+        notice: "Notícia excluída com sucesso!"
+    newsletter_emails:
+      create:
+        notice: "E-mail inscrito com sucesso!"
+      update:
+        notice: "E-mail atualizado com sucesso!"
+      destroy:
+        notice: "E-mail excluído com sucesso!"
+    orcamentos:
+      create:
+        notice: "Orçamento criado com sucesso!"
+      update:
+        notice: "Orçamento atualizado com sucesso!"
+      destroy:
+        notice: "Orçamento excluído com sucesso!"
+    segmento_redes:
+      create:
+        notice: "Segmento de rede criado com sucesso!"
+      update:
+        notice: "Segmento de rede atualizado com sucesso!"
+      destroy:
+        notice: "Segmento de rede excluído com sucesso!"
+    planos:
+      create:
+        notice: "Plano criado com sucesso!"
+      update:
+        notice: "Plano atualizado com sucesso!"
+      destroy:
+        notice: "Plano excluído com sucesso!"
+    rede_permissoes:
+      create:
+        notice: "Usuário convidado com sucesso!"
+      update:
+        notice: "Permissões atualizadas com sucesso!"
+      destroy:
+        notice: "Usuário excluído da rede com sucesso!"
+    servicos:
+      create:
+        notice: "Serviço criado com sucesso!"
+      update:
+        notice: "Serviço atualizado com sucesso!"
+      destroy:
+        notice: "Serviço excluído com sucesso!"
+    utilizacao_tvs:
+      create:
+        notice: "Utilização da TV criada com sucesso!"
+      update:
+        notice: "Utilização da TV atualizada com sucesso!"
+      destroy:
+        notice: "Utilização da TV excluída com sucesso!"
+    usuarios:
+      create:
+        notice: "Usuário criado com sucesso!"
+      update:
+        notice: "Usuário atualizado com sucesso!"
+      destroy:
+        notice: "Usuário excluído com sucesso!"
+    actions:
+      create:
+        notice: "%{resource_name} criado(a) com sucesso!"
+      update:
+        notice: "%{resource_name} atualizado(a) com sucesso!"
+      destroy:
+        notice: "%{resource_name} excluído(a) com sucesso!"
+        alert: "%{resource_name} não pode ser excluído(a)."

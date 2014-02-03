@@ -1,0 +1,23 @@
+- title 'Images'
+
+%center
+  = link_to 'Add new image', new_image_path, :class => 'button large'
+%br/
+
+%ul.large-block-grid-4
+  - for image in @images
+    %li
+      .panel
+        - if image.image?
+          = image_tag(image.image.url(:thumb))
+        - else
+          %center
+            %h1.subheader.icon-picture{:style => 'font-size: 9em'}
+        %br/
+        %center
+          %h1{:style => 'margin: 5px 0 -10px 0'}
+            = link_to '', edit_image_path(image), :data => {:tooltip => ''}, :class => 'icon-edit', :title => 'Edit'
+            &nbsp;
+            = link_to '', image, :confirm => "Remove image?", :method => :delete, :data => {:tooltip => ''}, :class => 'icon-trash', :title => 'Remove'
+
+.pagination-centered.upper-pagination= paginate @images

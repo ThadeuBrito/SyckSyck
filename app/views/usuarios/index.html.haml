@@ -1,0 +1,41 @@
+- title "Usuários"
+
+/ = render 'shared/pagination_numbers', :objetos => @usuarios, :objeto_nome => 'usuário'
+
+/ .pagination-centered.upper-pagination= paginate @usuarios
+
+- unless @usuarios.any?
+  %br/
+  %br/
+  %br/
+  %br/
+  %h1.subheader
+    %center
+      .icon-exclamation{:style => 'font-size: 8em'}
+      %br/
+      You need run
+      %i "rake db:seed"
+      on your consoler.
+
+- else
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %ul.large-block-grid-4
+    - for usuario in @usuarios
+      %li
+        .panel
+          - if usuario.imagem?
+            = image_tag(usuario.imagem.url(:thumb))
+          - else
+            %center
+              %h1.subheader.icon-user{:style => 'font-size: 9em'}
+
+          %br/
+          %center
+            %h1{:style => 'margin: 5px 0 -10px 0'}
+              = link_to '', edit_usuario_path(usuario), :data => {:tooltip => ''}, :class => 'icon-edit', :title => 'Edit'
+              &nbsp;
+              = link_to '', usuario, :confirm => 'Remove user?', :method => :delete, :data => {:tooltip => ''}, :class => 'icon-trash', :title => 'Remove'

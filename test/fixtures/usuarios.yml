@@ -1,0 +1,9 @@
+corebit:
+  id: 1
+  nome: CoreBit
+  email: 'contato@corebit.com.br'
+  roles_mask: 1
+  telefone_1: (98) 4141-2251
+  encrypted_password: $2a$10$0011SndKlvXxINFtDoMF2uBwj1PII83F451/dcQBtgJtgdzvA1lQS # testes
+  confirmation_sent_at: <%= 8.hours.ago.to_s :db %>
+  confirmed_at: <%= 7.hours.ago.to_s :db %>

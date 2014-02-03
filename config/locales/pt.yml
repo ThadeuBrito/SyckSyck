@@ -1,0 +1,179 @@
+pt:
+  language: 'Português'
+  date:
+    formats:
+      default: '%d/%m/%Y'
+      short: '%d de %B'
+      medium: '%d de %b de %Y'
+      long: '%d de %B de %Y'
+
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: [:day, :month, :year]
+
+  time:
+    formats:
+      default: '%d de %B de %Y, %H:%M'
+      time: '%H:%M hs'
+      short: '%d/%m/%Y, %H:%M'
+      long: '%A, %d de %B de %Y, %H:%M:%S'
+      default_date: '%d/%m/%Y'
+      only_date: '%d de %B de %Y'
+      month_day: '%d %b'
+      xml: '%Y-%m-%dT%H:%M:%S%Z'
+    am: ''
+    pm: ''
+
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: 'aproximadamente %{count} horas'
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: 'aproximadamente %{count} meses'
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: 'aproximadamente %{count} anos'
+      almost_x_years:
+        one: quase 1 ano
+        other: 'quase %{count} anos'
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: 'menos de %{count} minutos'
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: 'menos de %{count} segundos'
+      over_x_years:
+        one: mais de 1 ano
+        other: 'mais de %{count} anos'
+      x_days:
+        one: 1 dia
+        other: '%{count} dias'
+      x_minutes:
+        one: 1 minuto
+        other: '%{count} minutos'
+      x_months:
+        one: 1 mês
+        other: '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: '%{count} segundos'
+
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+
+  errors:
+    messages:
+      documento: "Não é válido"
+      inclusion: "Não está incluído na lista"
+      exclusion: "Não está disponível"
+      invalid: "Não é válido"
+      confirmation: "Não está de acordo com a confirmação"
+      accepted: "Deve ser aceito"
+      empty: "Preencha para prosseguir"
+      blank: "Preencha para prosseguir"
+      too_long: "É muito longo(a) (máximo: %{count} caracteres)"
+      too_short: "É muito curto(a) (mínimo: %{count} caracteres)"
+      wrong_length: "Não possui o tamanho esperado (%{count} caracteres)"
+      taken: "Já está em uso (foi cadastrado anteriormente)"
+      not_a_number: "Não é um número"
+      not_an_integer: "Não é um número inteiro positivo"
+      greater_than: "Deve ser maior do que %{count}"
+      greater_than_or_equal_to: "Deve ser maior ou igual a %{count}"
+      equal_to: "Deve ser igual a %{count}"
+      less_than: "Deve ser menor do que %{count}"
+      less_than_or_equal_to: "Deve ser menor ou igual a %{count}"
+      odd: "Deve ser ímpar"
+      even: "Deve ser par"
+      size_too_big: "É maior que o tamanho permitido"
+      email_format: "Digite um e-mail válido"
+      not_saved: "Não foi possível salvar o registro. Verifique os erros:"
+
+    models:
+      usuario:
+        attributes:
+          email:
+            not_found: "Não foi encontrado nenhum usuário com o e-mail digitado."
+            already_confirmed: "Este e-mail já foi confirmado. Você pode fazer o login."
+            not_locked: "Este e-mail não está bloqueado. Você pode fazer o login."
+          password:
+            confirmation: "Não está de acordo com a confirmação"
+
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: '%u %n'
+        precision: 2
+        separator: ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+    format:
+      delimiter: .
+      precision: 3
+      separator: ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: bilhão
+            other: bilhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+          thousand: mil
+          trillion:
+            one: trilhão
+            other: trilhões
+          unit: ''
+      format:
+        delimiter: .
+        precision: 2
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: .
+    precision:
+      format:
+        delimiter: .
+
+  support:
+    array:
+      last_word_connector: ' e '
+      two_words_connector: ' e '
+      words_connector: ', '
+
+  distance:
+    centi:
+      one: "metro"
+      other: "metros"
+    unit:
+      one: "km"
+      other: "km"

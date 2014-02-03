@@ -1,0 +1,14 @@
+- title '<%= singular_name.titleize %>'
+
+<% for attribute in attributes -%>
+%p
+  %b <%= attribute.human_name %>:
+  = @<%= singular_name %>.<%= attribute.name %>
+<% end -%>
+
+%br/
+- if can? :update, @<%= singular_name %>
+  = link_to 'Editar', edit_<%= singular_name %>_path(@<%= singular_name %>), :class => 'button icon-edit'
+
+- if can? :destroy, @<%= singular_name %>
+  = link_to 'Excluir', @<%= singular_name %>, :confirm => "Excluir o <%= singular_name %>?", :method => :delete, :class => 'button icon-trash'

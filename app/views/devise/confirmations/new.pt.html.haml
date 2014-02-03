@@ -1,0 +1,9 @@
+- title('Reenviar instruções de confirmação de e-mail')
+
+= simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name)) do |f|
+  .input.narrow.dashbox{:style => 'margin: 20px auto; display: block'}
+    = f.input :email, :required => true, :input_html => {:title => 'E-mail'}, :autofocus => true, :hint => ''
+
+    = f.submit 'Reenviar instruções', :data => {'disable-with' => 'Enviando...'}, :class => 'right button'
+    %br/
+    = render 'devise/shared/links'

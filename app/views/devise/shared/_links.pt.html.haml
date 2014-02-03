@@ -1,0 +1,7 @@
+- if resource_name == :usuario
+  = link_to 'Problemas com login?', problemas_login_path, :class => 'button small secondary'
+- elsif controller_name != 'passwords'
+  = link_to 'Esqueceu a senha?', new_password_path(resource_name), :class => 'button small secondary'
+
+- if controller_name != 'sessions'
+  = link_to 'Login', new_session_path(resource_name), :class => 'button small secondary'

@@ -1,0 +1,9 @@
+- title('Esqueci minha senha')
+
+= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name)) do |f|
+  .input.narrow.dashbox{:style => 'margin: 20px auto; display: block'}
+    = f.input :email, :required => true, :input_html => {:title => 'E-mail'}, :autofocus => true, :hint => ''
+
+    = f.submit 'Enviar instruções', :data => {'disable-with' => 'Enviando...'}, :class => 'right button'
+
+    = render 'devise/shared/links'

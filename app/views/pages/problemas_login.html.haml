@@ -1,0 +1,58 @@
+= content_for :js do
+  = javascript_tag do
+    $(document).ready(function() {
+    $(".radioinput").not("." + $("input[@name=radio]:checked").attr("id")).hide();
+    $(".input").find('input.string:visible').focus();
+    $("#radio_problema label").click(function() {
+    selectRadio = $(this).attr("for");
+    $(".radioinput").not("." + selectRadio).hide();
+    $("." + selectRadio).fadeIn(500);
+    setTimeout("$('.' + selectRadio).find('input.string:visible').focus()", 0);
+    });
+    });
+
+- title 'Soluções de login'
+
+%fieldset.mailselect
+  %h5 Em que podemos ajudá-lo?
+  #radio_problema
+    %label{:for => :problema_senha}
+      = radio_button_tag :problema, :senha, :checked => true
+      Esqueci minha senha
+    %label{:for => :problema_desbloqueio}
+      = radio_button_tag :problema, :desbloqueio
+      Reenviar informações de desbloqueio
+    -# %label{:for => :problema_confirmacao}
+    -#   = radio_button_tag :problema, :confirmacao
+    -#   Reenviar instruções de confirmação
+
+%fieldset{:style => 'position: relative'}
+  .radioinput.problema_senha
+    %h5 Esqueci minha senha
+    .field_with_hint
+      = simple_form_for(:usuario, :url => usuario_password_path) do |f|
+        = f.label :email, :required => true
+        .row.collapse
+          .large-8.columns= f.input :email, :required => true, :input_html => {:title => 'E-mail'}, :autofocus => true, :label => false
+          .large-4.columns= f.submit 'Enviar instruções', :data => {'disable-with' => 'Enviando...'}, :class => 'button postfix radius'
+        %p.hint Será enviado um e-mail com instruções de como redefinir a sua senha.
+
+  .radioinput.problema_desbloqueio
+    %h5 Reenviar informações de desbloqueio de usuário
+    .field_with_hint
+      = simple_form_for(:usuario, :url => usuario_unlock_path) do |f|
+        = f.label :email, :required => true
+        .row.collapse
+          .large-8.columns= f.input :email, :required => true, :input_html => {:title => 'E-mail'}, :autofocus => true, :label => false
+          .large-4.columns= f.submit 'Reenviar informações', :data => {'disable-with' => 'Enviando...'}, :class => 'button postfix radius'
+        %p.hint Será enviado um e-mail com instruções de como desbloquear o seu usuário.
+
+  -# .radioinput.problema_confirmacao
+  -#   %h5 Reenviar instruções de confirmação de e-mail
+  -#   .field_with_hint
+  -#     = simple_form_for(:usuario, :url => usuario_confirmation_path) do |f|
+  -#       = f.label :email, :required => true
+  -#       .row.collapse
+  -#         .large-8.columns= f.input :email, :required => true, :input_html => {:title => 'E-mail'}, :autofocus => true, :label => false
+  -#         .large-4.columns= f.submit 'Reenviar instruções', :data => {'disable-with' => 'Enviando...'}, :class => 'button postfix radius'
+  -#       %p.hint Será enviado um e-mail com instruções de como confirmar o seu cadastro.

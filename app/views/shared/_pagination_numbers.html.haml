@@ -1,0 +1,6 @@
+.pagination-numbers
+  Listando
+  - if objetos.count < objetos.total_count
+    == #{objetos.offset_value + 1} - #{objetos.offset_value + objetos.length} de
+  = pluralize(objetos.total_count, objeto_nome)
+

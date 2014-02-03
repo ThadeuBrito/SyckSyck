@@ -1,0 +1,222 @@
+$sprites-layout: vertical
+$icons: sprite-map("sprites/*.png")
+@import "sprites/*.png"
+
++all-sprites-sprites
+
+.profile-cover
+  padding: 15px
+  height: 300px
+
+
+
+.uparrowdiv, .downarrowdiv, .leftarrowdiv, .rightarrowdiv
+  // width: 200px
+  // min-height: 40px
+  background: white
+  color: #ccc
+  margin: 32px 20px
+  padding: 5px 5px
+  position: relative
+  text-align: center
+  word-wrap: break-word
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  margin-bottom: 2em
+  .subheader
+    margin: 0
+
+.leftarrowdiv:after
+  content: ''
+  display: block
+  position: absolute
+  top: 38%
+  left: -20px
+  width: 0
+  height: 0
+  border-color: transparent white transparent transparent
+  border-style: solid
+  border-width: 10px
+
+
+//=======================================================
+//  Imagem circle
+//=======================================================
+.img-circle
+  border-radius: 50%
+
+//===================================================================================
+//  Headers
+//===================================================================================
+
+h1, h2, h3, h4, h5, h6, p
+  &.white
+    color: #fff
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 400
+
+h2
+  font-size: 28px
+  line-height: 36px
+  letter-spacing: -1px
+  color: $primary-color
+
+h6
+  font-weight: 400
+  color: #777
+  font-size: 12px
+  line-height: 22px
+  margin-bottom: 0
+
+.hboxx
+  margin: 0 0 20px
+  background: #f1f1f3
+  padding: 15px 25px 10px
+  border: 1px solid #ddd
+  border-bottom: 5px solid $primary-color
+  +border-radius (3px)
+
+  h2
+    margin: 0
+
+
+//===================================================================================
+//  Elementos Gerais
+//===================================================================================
+
+table
+  width: 100%
+
+.small-table
+  border: 0
+  background: #f8f8f8
+  margin: 0
+
+  td
+    font-size: 13px
+    padding: 6px 10px 3px
+
+.logo-large
+  height: 56px
+  margin: 50px 0
+
+.logo-small
+  height: 35px
+  margin: 30px 0
+
+footer
+  background: darken(#222121, 3%)
+  color: #fff
+  position: relative
+  z-index: 1
+  padding-top: 25px
+
+#content
+  background-color: #fdfdfd
+  padding: 20px 5px 30px
+
+//===================================================================================
+//  Loginbox da Home
+//===================================================================================
+
+#loginbox
+  input
+    margin-bottom: 5px
+
+//===================================================================================
+//  Infoblock
+//===================================================================================
+
+.infoblocks
+  list-style-type: none
+  margin: 0
+  font-size: 0.9em
+
+  h6
+    margin-top: 0
+
+  li
+    padding-bottom: 15px
+
+  .tiny
+    margin-bottom: -4px
+    margin-top: -3px
+    font-size: 11px
+
+//===================================================================================
+//  Form: Hints
+//===================================================================================
+
+.input.radio_buttons
+  margin-bottom: 12px
+  overflow: hidden
+
+.field_with_hint
+  input, textarea, &.input.radio_buttons, .button
+    margin-bottom: 3px
+
+.hint
+  font-size: 11px
+  margin: 0 0 12px
+  color: #666
+  clear: both
+
+//===================================================================================
+//  Ajustes de ritmo de linha
+//===================================================================================
+
+section > .icon-new, fieldset > .icon-new, fieldset > .icon-new
+  margin-bottom: 20px
+
+//============================================================
+// Sticky Footer
+//============================================================
+
+body, html
+  height: 100%
+
+#content-wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -130px
+
+footer, #footer-push
+  height: 140px
+  clear: both
+
+//============================================================
+// Menu Left Bar
+//============================================================
+
+.menu-title
+  background: $primary-color
+  padding: 10px
+  font-weight: bold
+  color: $white
+  // font-family: Helvetica
+  border: 1px solid $clouds
+  margin-bottom: -1px
+
+.menu-sub
+  width: 100%
+  background: $white
+  padding: 10px
+  border: 1px solid $clouds
+  margin-bottom: -1px
+  // font-family: Helvetica
+  &:hover
+    background: $clouds
+
+//============================================================
+// Home
+//============================================================
+
+.gratis
+  background: $primary-color
+  color: $white
+  font-size: 2.9em
+  padding: 10px
+  width: 192px

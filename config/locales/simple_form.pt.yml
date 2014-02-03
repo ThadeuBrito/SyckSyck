@@ -1,0 +1,81 @@
+pt:
+  simple_form:
+    required:
+      html: '<abbr data-tooltip title="Campo requerido">*</abbr>'
+
+    error_notification:
+      default_message: 'Alguns erros encontrados, por favor verifique:'
+
+    labels:
+      defaults:
+        tipo_pessoa: 'Entidade'
+        razao_social: 'Razão social'
+        cnpj: 'CNPJ'
+        email: 'E-mail'
+        password: 'Senha'
+        password_confirmation: 'Confirmação de senha'
+        current_password: 'Senha atual'
+        endereco: 'Endereço'
+        cep: 'CEP'
+        estado: 'Estado'
+        descricao: 'Descrição'
+        pretensao: 'Qual o seu objetivo ao contratar a TV Própria?'
+        codigo_local: 'Código local'
+        titulo: 'Título'
+        cobranca: 'Cobrança'
+        subdominio: 'Subdomínio'
+        horario_verao: 'Atualizar com horário de verão'
+        midia: 'Mídia'
+        frequencia_atualizacao: 'Frequência média de atualização de conteúdo'
+        situacao: 'Situação'
+        percentual_franqueadora: 'Percentual da Franqueadora'
+        percentual_master: 'Percentual - Master'
+        percentual_premium: 'Percentual - Premium'
+        percentual_hb: 'Percentual - Home Based'
+        responsavel: 'Responsável'
+        observacao: 'Observação'
+        percentual_own_tv: 'Percentual - TV própria'
+        percentual_news: 'Percentual - Notícias'
+        percentual_segments: 'Percentual - Segmentos'
+        percentual_entertainment: 'Percentual - Entretenimento'
+        percentual_ads: 'Percentual - Anúncios'
+        orientacao: 'Orientação'
+        padrao_layoute: 'Padrão de layout'
+      rede:
+        logomarca: 'Envie uma imagem a ser exibida no topo da página da empresa'
+
+    options:
+      defaults:
+        tipo_pessoa:
+          pessoa_fisica: 'Pessoa física'
+          pessoa_juridica: 'Pessoa jurídica'
+      usuario:
+        perfil:
+          cliente_final: 'Cliente final'
+          agencia_publicidade: 'Agência de publicidade'
+          vendedor_independente: 'Vendedor independente'
+          gestor_contrato: 'Gestor de contrato'
+          parceiro: 'Parceiro (Oper. de rede)'
+
+    hints:
+      rede:
+        logomarca: 'Tamanho do arquivo < 1MB &nbsp; | &nbsp; Tipo: Imagem PNG com transparência &nbsp; | &nbsp; Dimensões: Largura 201px e Altura até 100px'
+      usuario:
+        descricao: 'Caso ache necessário, descreva-nos com mais detalhes o serviço prestado por seu negócio.'
+        pretensao: 'Para melhor ajudá-lo, com possíveis ofertas e sugestões de serviços, nós gostariamos de saber o que você pretende ao contratar a TV Própria.'
+        new:
+          email: 'Este e-mail será utilizado para você fazer o login'
+        edit:
+          email: 'Atenção, se você precisar alterar seu e-mail, a sua alteração só será efetivada após você confirmar seu novo e-mail'
+          password: 'Deixe este campo limpo caso não queira modificar sua senha'
+          current_password: 'Você precisa digitar sua senha atual para confirmar as mudanças'
+
+    placeholders:
+      usuario:
+        email: ''
+
+  helpers:
+    submit:
+      create: 'Salvar'
+      update: 'Atualizar'
+    on_disable: 'Enviando...'

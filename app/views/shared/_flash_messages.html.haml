@@ -1,0 +1,8 @@
+- flash.each do |type, content|
+	= content_for :js do
+		= javascript_tag "noty({text: '#{content}', layout: 'topCenter', type: '#{type}' })"
+
+
+- if flash.any?
+	= content_for :js do
+		= javascript_tag "$(function($){ setTimeout(\"$('.noty_text').click()\", 8000); })"

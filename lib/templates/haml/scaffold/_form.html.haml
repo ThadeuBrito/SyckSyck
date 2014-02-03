@@ -1,0 +1,7 @@
+= simple_form_for(<%= singular_table_name %>, :validate => :js) do |f|
+  %fieldset
+  <%- attributes.each do |attribute| -%>
+    = f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %>
+  <%- end -%>
+
+  = f.button :submit, 'data-disable-with' => 'Salvando...', :class => 'button right'

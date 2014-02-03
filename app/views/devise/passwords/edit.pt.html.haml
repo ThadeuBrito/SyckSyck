@@ -1,0 +1,13 @@
+- title('Digite sua nova senha')
+
+= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+  .input.narrow.dashbox{:style => 'margin: 20px auto; display: block'}
+    - if (f.full_error :reset_password_token)
+      %p{:style => 'border: 1px solid #555; background-color: #fbb; color: #333; padding: 4px 9px'} O e-mail que você utilizou para redefinir a sua senha expirou. Por favor, faça uma nova requisição.
+    = f.input :reset_password_token, :as => :hidden
+    = f.input :password, :required => true, :autofocus => true
+    = f.input :password_confirmation, :required => true
+
+    = f.submit 'Salvar nova senha', :data => {'disable-with' => 'Salvando...'}, :class => 'right button'
+    %br/
+    = render 'devise/shared/links'

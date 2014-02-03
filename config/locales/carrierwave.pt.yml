@@ -1,0 +1,5 @@
+pt:
+  errors:
+    messages:
+      carrierwave_processing_error: 'Falha no processamento'
+      carrierwave_integrity_error: 'Tipo de arquivo não permitido'

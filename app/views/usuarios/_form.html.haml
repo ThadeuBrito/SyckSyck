@@ -1,0 +1,43 @@
+= content_for :modal do
+  #edita-foto.reveal-modal.small
+    = simple_form_for(f.object, :remote => true, :validates => :js) do |f|
+      .row
+        .large-5.columns
+          %center
+
+            - if f.object.imagem?
+              = image_tag(f.object.imagem.url(:medium), :width => 200, :alt => 'Profile image')
+            - else
+              %center
+                %h1.subheader.icon-user{:style => 'font-size: 9em;'}
+
+        .large-7.columns
+          = f.input :imagem, :label => 'Image'
+          = f.input :remove_imagem, :label => 'Remove image?', :as => :radio_buttons, :wrapper => :switch, :collection => [['Não', false], ['Sim', true]], :checked => false, :class => 'tiny'
+        .large-12.columns= f.submit "pronto", :class => 'button right'
+    %a.close-reveal-modal &#215;
+%br/
+%br/
+%br/
+%br/
+
+.row
+  - unless f.object.new_record?
+    %center
+      .large-4
+
+        - if f.object.imagem?
+          = image_tag(f.object.imagem.url(:medium), :width => 200, :alt => 'Profile image')
+        - else
+          %center
+            %h1.subheader.icon-user{:style => 'font-size: 9em;'}
+
+
+        / .th.radius= image_tag(f.object.imagem.url(:medium), :width => 220, :alt => 'Profile image')
+        %br/
+        %br/
+        = link_to f.object.imagem.blank? ? 'Add image' : 'Edit image', imagem_usuario_path(f.object), :class => 'secondary button large-12', :remote => true
+
+        = f.input :nome, :label => 'name'
+        = f.input :email
+        = f.submit 'Salvar', :data => {'disable-with' => 'Salvando...'}, :class => 'button'

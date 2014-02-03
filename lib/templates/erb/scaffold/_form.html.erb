@@ -1,0 +1,9 @@
+<%%= simple_form_for(resource) do |f| %>
+  <%%= f.inputs do %>
+<% for attribute in attributes -%>
+    <%%= f.input :<%= attribute.name %> %>
+<% end -%>
+  <%% end %>
+
+  <%%= f.buttons %> or <%%= link_to 'cancel', resource %>
+<%% end %>

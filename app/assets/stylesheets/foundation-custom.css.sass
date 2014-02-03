@@ -1,0 +1,161 @@
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea
+  +transition(none)
+
+
+//=======================================================
+//  Panel
+//=======================================================
+.panel
+  border: none
+  background: white
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+
+//=======================================================
+//  Buttons Flat
+//=======================================================
+.button
+  border: none
+  webkit-box-shadow: none
+  box-shadow: none
+
+//=======================================================
+//  Text area height fix
+//=======================================================
+textarea
+  height: auto
+
+//=======================================================
+//  Darker even table color
+//=======================================================
+table tbody tr:nth-child(even)
+  background: #f1f1f3
+
+//=======================================================
+//  For Small
+//=======================================================
+@media only screen and (max-width: 767px)
+  .orbit-wrapper
+    display: none
+
+  .hide-for-mobile
+    display: none !important
+
+  section.columns, #content > .large-12.columns
+    padding: 0
+
+//=======================================================
+//  For Large
+//=======================================================
+@media only screen and (min-width: 768px)
+  .show-for-mobile
+    display: none !important
+
+
+//=======================================================
+//  Breadcrumb Custom
+//=======================================================
+.breadcrumbs
+  border: none
+  background: none
+  margin: 0 -0.5em
+  padding: 2px 0 0
+  font-size: 1em
+
+.breadcrumbs li a,
+.breadcrumbs li span
+  text-transform: none
+  font-size: 1em
+
+.breadcrumbs li
+  padding: 0 0.5em
+  font-size: emCalc(13px)
+  color: $concrete
+  text-transform: none
+
+.breadcrumbs li:before
+  left: -0.5em
+
+
+//=======================================================
+//  Fieldsets to Dashboxes adjust
+//=======================================================
+select,
+input.file
+  margin-top: 5px
+  margin-bottom: 19px
+
+fieldset
+  // border: 1px solid $silver
+  background-color: $white
+  padding: 10px 25px 15px
+  margin: 16px 0
+
+  h5
+    color: $asbestos
+    border-bottom: 1px solid $silver
+
+  > h6:first-of-type
+    margin-top: 0
+
+  // Para poder usar fieldset com legend dentro de outro fieldset
+  legend
+    background: transparent
+    color: #4d4d4d
+    font-weight: 500
+
+// Ajuste para quando os fieldsets estiverem dentro de colunas
+.row fieldset
+  margin-top: 0
+  width: 100%
+
+
+//=======================================================
+//  Red Abbrs
+//=======================================================
+abbr
+  color: $primary-color
+
+//=======================================================
+//  Pagination Custom
+//=======================================================
+.pagination-numbers
+  margin-bottom: 20px
+  line-height: 30px
+  font-size: emCalc(14px)
+  float: right
+
+.upper-pagination
+  .page a
+    border-bottom: 2px solid #ccc
+
+  .page.current a
+    border-bottom: 2px solid #b00
+
+.bottom-pagination
+  .page a
+    border-top: 2px solid #ccc
+
+  .page.current a
+    border-top: 2px solid #b00
+
+.page
+  &.arrow a, &.first a, &.last a
+    border-color: #fff
+
+  &.current a
+    background: none
+    color: inherit
+
+  &.current a:hover
+    background: none

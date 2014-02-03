@@ -1,0 +1,22 @@
+%table{:width => '100%', :border => 0, :cellpadding => 0, :cellspacing => 0, :style => 'background-color:#FFF;font:12px Verdana,Arial,Helvetica,sans-serif;color:#333'}
+  %tbody
+    %tr
+      %td{:style => 'border-bottom:1px solid #AAA;padding:12px'}= link_to image_tag(root_url + 'assets/logo_print.png', :alt => 'SickSick', :border => 0), root_url, :target => '_blank'
+
+    %tr
+      %td{:style => 'word-wrap:break-word;padding:8px 12px;margin:0'}
+        %p== Olá #{@resource.nome},
+
+        %p{:style => 'font-weight:bold;color:#B60000;font-size:14px'} Seu usuário foi bloqueado devido excessivas tentativas de login mal sucedidas.
+
+        %p
+          Por favor,
+          = link_to 'clique aqui', unlock_url(@resource, :unlock_token => @resource.unlock_token)
+          desbloquear seu usuário, ou utilize esta url:
+          = unlock_url(@resource, :unlock_token => @resource.unlock_token)
+
+        %br/
+        %p
+          Atenciosamente,
+          %br/
+          = link_to configatron.app_name, root_url

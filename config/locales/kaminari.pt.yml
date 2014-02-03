@@ -1,0 +1,8 @@
+pt:
+  views:
+    pagination:
+      first: 'Primeira'
+      previous: '&laquo;'
+      next: '&raquo;'
+      last: 'Última'
+      truncate: '...'

@@ -1,0 +1,16 @@
+= title 'Editando usuário'
+
+- add_breadcrumb 'Editando perfil', :edit_usuario_registration_path
+
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }, :validate => :js) do |f|
+	= render 'usuarios/form', :f => f
+	.row
+		.large-9.columns.right
+			%h5.label Preencha para confirmar as mudanças
+			= f.input :current_password, :required => true, :label => false
+		.large-4.columns= f.button :submit, 'data-disable-with' => 'Salvando...', :class => 'button right'
+
+=# %p
+=#   %b Gostaria de cancelar seu cadastro?
+=#   %br/
+=#   = link_to 'Cancelar meu cadastro', registration_path(resource_name), :confirm => 'Confirma a exclusão da seu cadastro?', :method => :delete

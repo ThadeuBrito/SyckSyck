@@ -1,0 +1,13 @@
+- resource = Usuario.new
+#cadastro-modal.reveal-modal.small
+	= simple_form_for(resource, :as => resource, :url => registration_path(resource), :validate => :js) do |f|
+		.row
+			%h4.subheader.large-6.columns Dados Cadastrais
+			/ icon-facebook-sign
+			.large-12.columns= f.input :nome
+			.large-12.columns= f.input :email, :placeholder => 'nome@exemplo.com', :hint => 'Este e-mail será utilizado para você fazer o login'
+			.large-12.columns= f.input :password, :required => true
+			.large-12.columns= f.input :password_confirmation, :required => true
+
+			.large-12.columns= f.submit 'Criar conta', 'data-disable-with' => 'Enviando...', :class => 'button right'
+	%a.close-reveal-modal &#215;

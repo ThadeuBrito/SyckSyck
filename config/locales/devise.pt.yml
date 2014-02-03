@@ -1,0 +1,52 @@
+pt:
+  devise:
+    confirmations:
+      confirmed: 'Seu cadastro foi confirmado com sucesso. Agora está conectado.'
+      send_instructions: 'Dentro de instantes, você receberá um e-mail com as instruções de confirmação do seu cadastro.'
+    failure:
+      already_authenticated: 'Você já fez o login.'
+      inactive: 'Seu usuário ainda não foi ativado.'
+      invalid: 'E-mail ou senha inválidos.'
+      invalid_token: 'O token de autenticação não é válido.'
+      locked: 'Seu usuário está bloqueado. Foi enviado um e-mail com instruções de como desbloquear seu usuário.'
+      not_found_in_database: 'E-mail ou senha inválidos.'
+      timeout: 'Sua sessão expirou, por favor faça login novamente para poder continuar.'
+      unauthenticated: 'Para continuar, faça login ou cadastre-se.'
+      unconfirmed: 'Seu cadastro ainda não foi confirmado. Acesse seu e-mail confirme seu cadastro.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instruções de confirmação de e-mail'
+      reset_password_instructions:
+        subject: 'Instruções de redefinição de senha'
+      unlock_instructions:
+        subject: 'Instruções de desbloqueio de usuário'
+    passwords:
+      send_instructions: 'Dentro de instantes, você receberá um e-mail com as instruções para redefinir a sua senha.'
+      invalid_token: 'O e-mail que você utilizou expirou! Para alterar sua senha, faça uma nova requisição.'
+      updated: 'Sua senha foi alterada com sucesso. Agora está conectado.'
+      updated_not_active: 'Sua senha foi alterada com sucesso.'
+    registrations:
+      destroyed: 'Adeus! Seu cadastro foi cancelado com sucesso. Esperamos vê-lo novamente em breve.'
+      signed_up: 'Fez login com sucesso. Se não autorizado, a confirmação foi enviada por e-mail.'
+      signed_up_but_inactive: 'Login feito com sucesso. Entretanto, seu acesso está restrito pois seu cadastro não está ativo.'
+      signed_up_but_locked: 'Login feito com sucesso. Entretanto, seu acesso está restrito pois seu cadastro está bloqueado.'
+      signed_up_but_unconfirmed: 'Para concluir seu cadastro, por favor, acesse seu e-mail e clique no link de confirmação.'
+      update_needs_confirmation: 'Seu cadastro foi atualizado com sucesso, mas nós precisamos verificar seu novo endereço de e-mail. Por favor, acesse seu e-mail e clique no link de confirmação para confirmar seu novo e-mail.'
+      updated: 'Seu cadastro foi atualizado com sucesso.'
+    sessions:
+      signed_in: 'Login efetuado com sucesso.'
+      signed_out: 'Saiu do sistema com sucesso.'
+    unlocks:
+      send_instructions: 'Dentro de instantes, você receberá um e-mail com as instruções como desbloquear o seu usuário.'
+      unlocked: 'Seu usuário foi desbloqueado com sucesso. Você pode fazer o login.'
+
+  errors:
+    messages:
+      already_confirmed: "já foi confirmado, por favor, tente fazer o login"
+      confirmation_period_expired: 'precisa ser confirmado(a) em %{period}, por favor, faça uma nova requisição'
+      expired: "expirou, por favor, faça uma nova requisição"
+      not_found: "não foi encontrado"
+      not_locked: "não foi bloqueado"
+      not_saved:
+        one: "Não foi possível salvar o registro: 1 erro."
+        other: "Não foi possível salvar o registro: %{count} erros."

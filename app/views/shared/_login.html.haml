@@ -1,0 +1,14 @@
+#login-modal.reveal-modal.small
+  .row.collapse
+    %h4.large-6.columns.collapse.subheader Login de usuário
+  = form_for(:usuario, :url => usuario_session_path) do |f|
+    .row.collapse
+      .large-12.columns= f.text_field :email, :placeholder => 'E-mail cadastrado'
+    .row.collapse
+      .large-7.columns= f.password_field :password, :placeholder => 'Senha'
+      .large-5.columns= f.submit 'Entrar', 'data-disable-with' => 'Enviando...', :class => 'button postfix radius'
+    .row.collapse
+      .large-12.columns
+        %span.hint * Todos os dados são criptografados
+        .right= link_to 'Problemas com login?', problemas_login_path, :class => 'button small secondary'
+  %a.close-reveal-modal &#215;

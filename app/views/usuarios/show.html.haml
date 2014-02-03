@@ -1,0 +1,20 @@
+- title "#{@usuario.nome}"
+
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+
+%center
+  - if @usuario.imagem?
+    = image_tag(@usuario.imagem.url(:thumb))
+  - else
+    %h1.subheader.icon-picture{:style => 'font-size: 10em'}
+  %br/
+  %br/
+  .large-4
+    %h1.subheader
+      = link_to '', edit_usuario_path(@usuario), :class => 'icon-edit'
+      = link_to '', @usuario, :confirm => "Remove image?", :method => :delete, :class => 'icon-trash'

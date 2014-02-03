@@ -1,0 +1,187 @@
+/* Example tokeninput style #2: Facebook style */
+ul.token-input-list {
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  width: 100%;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  position: relative;
+
+
+  float: left;
+
+
+  overflow: hidden;
+  height: auto !important;
+  height: 1%;
+  z-index: 10;
+  padding: 0;
+}
+
+ul.token-input-list li input {
+  height: 30px;
+  padding: 0;
+}
+
+ul.token-input-list li input {
+  border: 0;
+  width: 100px;
+  padding: 3px 8px;
+  background-color: white;
+  margin: 0;
+  -webkit-appearance: caret;
+}
+
+li.token-input-token {
+  overflow: hidden;
+  height: auto !important;
+  height: 15px;
+  margin: 3px;
+  padding: 0 8px;
+  background-color: #eff2f7;
+  color: #000;
+  cursor: default;
+  border: 1px solid #ccd5e4;
+  font-size: 18px;
+  line-height: 14px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  float: left;
+  white-space: nowrap;
+}
+
+li.token-input-token p {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+li.token-input-token span {
+  color: #a6b3cf;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+li.token-input-selected-token {
+  background-color: #5670a6;
+  border: 1px solid #3b5998;
+  color: #fff;
+}
+
+li.token-input-input-token {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+div.token-input-dropdown {
+  position: absolute;
+  width: 400px;
+  background-color: #fff;
+  overflow: hidden;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  cursor: default;
+  font-size: 11px;
+  font-family: Verdana;
+  z-index: 55;
+}
+
+div.token-input-dropdown p {
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  color: #777;
+}
+
+div.token-input-dropdown ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.token-input-dropdown ul li {
+  background-color: #fff;
+  padding: 3px;
+  margin: 0;
+  list-style-type: none;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item {
+  background-color: #fff;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item2 {
+  background-color: #fff;
+}
+
+div.token-input-dropdown ul li em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+
+
+/* --------------- TokenInput Facebook Custom --------------- */
+
+ul.token-input-list li input {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+li.token-input-token {
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+li.token-input-token span {
+  color: #000;
+}
+
+li.token-input-selected-token {
+  background-color: #ccc;
+  border: 1px solid #bbb;
+}
+
+div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+  background-color: #333;
+}
+
+.token-input-list:after {
+  content: "\F002";
+  position: absolute;
+  right: 10px;
+  top: -2px;
+  font-size: 22px;
+  font-family: "FontAwesome";
+  color: #bbbbbb;
+}

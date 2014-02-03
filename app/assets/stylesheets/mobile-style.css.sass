@@ -1,0 +1,147 @@
+@media only screen and (max-width: 767px)
+  header
+    +box-shadow(none)
+    border-bottom-width: 2px
+
+  footer
+    +box-shadow(none)
+    border-top-width: 2px
+
+  .chamabutton.dashbox
+    width: 100%
+
+  .infobox
+    +box-shadow(0 0 0 1px #ccc)
+
+  // Mobile homeboxes
+
+  .sprites-icon_var
+    background-position: 0 -1320px
+
+  .sprites-icon_con
+    background-position: 0 -1480px
+
+  .sprites-icon_pub
+    background-position: 0 -1240px
+
+  .sprites-icon_ali
+    background-position: 0 -1080px
+
+  .sprites-icon_edu
+    background-position: 0 -1400px
+
+  .sprites-icon_out
+    background-position: 0 -1160px
+
+  #homeboxes
+    margin: 0 0 10px
+
+    > div
+      margin-bottom: 0
+
+    .homebox-column:hover
+      .homebox
+        margin: -20px 0 0
+        height: auto
+
+        p
+          height: auto
+
+    .homebox-column
+      +box-shadow(0 0 0 1px #ccc)
+      margin-bottom: 10px
+      +border-radius(10px)
+
+    .homebox-column, .homebox, .homeboximg
+      display: block
+      min-width: 100%
+      position: static
+
+    .homebox, .homeboximg
+      +box-shadow(none)
+
+    .homebox
+      margin: -20px 0 0
+      height: auto
+      padding-top: 20px
+      +border-radius(0 0 15px 15px)
+
+      p
+        height: auto
+        overflow: visible
+
+    .homeboximg
+      height: 95px
+      position: relative
+      z-index: 10
+      +border-radius(15px 15px 0 0)
+
+      > div
+        height: auto
+
+      h3
+        top: 0
+        line-height: 75px
+
+
+  // Responsive Table
+  table.responsive-table
+
+    // make each table separate from other ones
+    padding-bottom: 0
+    display: block
+    width: 100%
+
+    .text-center
+      text-align: left
+
+    // make sure captions are displayed
+    caption
+      display: block
+
+
+    // wipe the thead from the face of the earth, modern screen readers will expose the generated content
+    thead
+      display: none
+      visibility: hidden
+
+
+    /*
+     * make everything display block so it
+     * aligns vertically
+     */
+    tbody, tr, th, td
+      display: block !important
+      padding: 1px 3px !important
+      text-align: left
+      white-space: normal
+
+
+    // give each row a little space
+    tr
+      margin-bottom: 10px
+
+
+    /* Labeling
+     * adding a data-title attribute to the cells
+     * lets us add text before the content to provide
+     * the missing context
+     *
+     * Markup:
+     *   <td data-title="Column Header">Content Here</td>
+     *
+     * Display:
+     *   Column Header: Content Here
+     */
+    th[data-title]:before,
+    td[data-title]:before
+      content: attr(data-title) ":\00A0"
+      font-weight: bold
+
+    th:not([data-title])
+      font-weight: bold
+
+
+    // hide empty cells
+    td:empty
+      display: none
