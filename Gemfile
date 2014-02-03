@@ -4,7 +4,7 @@ gem 'rails', '3.2.12'
 gem 'rake'
 gem 'pg', '0.14.1'
 gem 'jquery-rails', '2.0.1'
-gem 'configatron', '2.8.3'
+# gem 'configatron', '2.8.3'
 
 gem 'devise', '2.0.4'
 gem 'inherited_resources', '1.3.1'
