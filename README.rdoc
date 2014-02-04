@@ -1,24 +1,23 @@
 == SickSick error
 
 Welcome to Sick::Sick error
-Hello, I am the SickSick. I show up when someone tries to upload image with the delayed_job and Carrierwave together on the same project. How do I solve for me?
+Hello, I am the SickSick. I show up when someone tries to upload image with the delayed_job and Carrierwave together on the same project. How do I solve it?
 
 
 === Gems
 
-* Carrierwave https://github.com/carrierwaveuploader/carrierwave
-* Delayed_job, https://github.com/tobi/delayed_job
+* Carrierwave:  https://github.com/carrierwaveuploader/carrierwave
+* Delayed_job:  https://github.com/tobi/delayed_job
 
 
 === Quick start
 
-To teste the image upload in users you need run:
+For the test users upload images you need to run:
 
   $ rake db:seed
 
 === Environment
 ruby 1.9.3p448 (2013-06-27 revision 41675) [x86_64-darwin12.4.0]
-
 
 
 Help me please.
