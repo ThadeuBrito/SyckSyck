@@ -257,7 +257,7 @@ DEPENDENCIES
   cocoon (= 1.2.0)
   coffee-rails (= 3.2.2)
   compass-rails (= 1.0.3)
-  configatron (= 2.8.3)
+  configatron
   daemons (= 1.0.10)
   delayed_job_active_record (= 0.3.3)
   delayed_mailhopper (= 0.0.7)

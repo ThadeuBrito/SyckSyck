@@ -2,5 +2,4 @@
 
 # ActionMailer::Base.default_url_options = { :host => 'localhost:3000' }
 
-Usuario.create(:nome => 'Corebit', :email => 'contato@corebit.com.br', :password => 'testes', :password_confirmation => 'testes', :roles => [Usuario::ADMIN] )
-Usuario.create(:nome => 'Thadeu Brito', :email => 'thadeu@corebit.com.br', :password => 'testes', :password_confirmation => 'testes')
+Usuario.create(:nome => 'sick', :email => 'sick@error.com', :password => '123456', :password_confirmation => '123456' )
