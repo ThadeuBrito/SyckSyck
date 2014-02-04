@@ -1,7 +1,7 @@
-== SickSick error
+== SyckSyck error
 
-Welcome to Sick::Sick error
-Hello, I am the SickSick. I show up when someone tries to upload image with the delayed_job and Carrierwave together on the same project. How do I solve it?
+Welcome to Syck::Syck error
+Hello, I am the SyckSyck. I show up when someone tries to upload image with the delayed_job and Carrierwave together on the same project. How do I solve it?
 
 
 === Gems

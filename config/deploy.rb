@@ -3,8 +3,8 @@ require 'delayed/recipes'
 
 default_environment['GIT_SSL_NO_VERIFY'] = 'true'
 
-set :application, "sick_sick"                 # Can be whatever you want, I use the project name from my SVN repository
-set :user, "sick_sick"                         # Your HostingRails username
+set :application, "syck_syck"                 # Can be whatever you want, I use the project name from my SVN repository
+set :user, "syck_syck"                         # Your HostingRails username
 set :domain, "#{user}@midiaindoor.com.br"        # The URL for your app
 
 # set :scm, :subversion
@@ -12,7 +12,7 @@ set :domain, "#{user}@midiaindoor.com.br"        # The URL for your app
 # set :scm_username, "eduardo"    #if http
 
 set :scm, :git
-set :repository, "https://corebit@bitbucket.org/corebit/sick_sick.git"  # Your clone URL
+set :repository, "https://corebit@bitbucket.org/corebit/syck_syck.git"  # Your clone URL
 set :git_enable_submodules, 1 # if you have vendored rails
 set :branch, "master"
 set :git_shallow_clone, 1

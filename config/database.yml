@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: sick_sick_desenvolvimento
+  database: syck_syck_desenvolvimento
   username: postgres
   password: admin
   host: localhost
@@ -9,7 +9,7 @@ development:
 
 # test:
 #   adapter: postgresql
-#   database: sick_sick_test
+#   database: syck_syck_test
 #   username: postgres
 #   password: admin
 #   host: localhost
@@ -18,7 +18,7 @@ development:
 
 production:
   adapter: postgresql
-  database: sick_sick_db
+  database: syck_syck_db
   username: postgres
   password: admin
   host: localhost

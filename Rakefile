@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-SickSick::Application.load_tasks
+SyckSyck::Application.load_tasks

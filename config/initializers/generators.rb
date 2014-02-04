@@ -1,4 +1,4 @@
-SickSick::Application.configure do
+SyckSyck::Application.configure do
   config.generators do |g|
     g.javascripts false
     g.stylesheets false

@@ -1,6 +1,6 @@
 defaults: &defaults
   token: 0c306e06190c9b8da0b9a754245db9d3005dd8bf871762c1264b86ec1b955b9ff8bef0c7467d8e35f3ad53784bb3cc99176e4ce01efe12459621a49b1e02d104
-  app_name: SickSick
+  app_name: SyckSyck
   noreply: contato@midiaindoor.com.br
   host: localhost:3000
 

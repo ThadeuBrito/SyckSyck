@@ -1,4 +1,4 @@
- SickSick::Application.routes.draw do
+ SyckSyck::Application.routes.draw do
 
   resources :images
 

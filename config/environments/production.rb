@@ -1,4 +1,4 @@
-SickSick::Application.configure do
+SyckSyck::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
   # Code is not reloaded between requests

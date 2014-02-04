@@ -1,4 +1,4 @@
-== SickSick application
+== SyckSyck application
 
 This simple application includes ruby/rails technology which we use in the Flatsoft for new projects.
 Application currently based on Rails 3 stable branch.
@@ -28,7 +28,7 @@ Application currently based on Rails 3 stable branch.
 * clone repository
 * tune gemspec name in the .rvmrc
 * tune config/config.yml
-* tune in the sources application name: s/SickSick/YouApplicationName/g
+* tune in the sources application name: s/SyckSyck/YouApplicationName/g
 * tune config/database.yml.example and copy it to the config/database.yml
 * bundle install
 * rake cucumber
